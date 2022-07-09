@@ -9,10 +9,10 @@ relative to the frame in which they are contained.
 
 
 # Introduction
-- Unfortianlly I don't have so much time to implement the bouns points so, I decided to implement the most complicated part of the project which is "the candles view".
+- Unfortunately I don't have so much time to implement the bouns points so, I decided to implement the most complicated part of the project which is "the candles view".
 - This project contains a candles chart that draws two different entries of the same currency
 - The project is written to be simple and to present how I can use the "charts" library to draw and customize the candles chart. 
-- You can check my Github account to see more open source projects that contain "Unit Testing", "API Calling" and "App Architecture Description"
+- Please check my Github account to see more open source projects that contain "Unit Testing", "API Calling" and "App Architecture Description"
 ING-APP  :  https://github.com/aymafayez/ING-App
 Sky-APP  :   https://github.com/aymafayez/SkyApp
 
