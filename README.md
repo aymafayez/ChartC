@@ -1,6 +1,6 @@
 # ChartC
 
-Main task:
+# Main task:
 - Your task is to create a UI element that can draw price charts
 -  The chart can be scrolled left and right, and the candles should shrink and expand
 relative to the frame in which they are contained.
