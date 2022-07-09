@@ -1,6 +1,6 @@
 # ChartC
 
-# Main task:
+# Main task
 - Your task is to create a UI element that can draw price charts
 -  The chart can be scrolled left and right, and the candles should shrink and expand
 relative to the frame in which they are contained.
@@ -16,7 +16,7 @@ relative to the frame in which they are contained.
 ING-APP  :  https://github.com/aymafayez/ING-App
 Sky-APP  :   https://github.com/aymafayez/SkyApp
 
-# Completed Tasks : 
+# Completed Tasks
 - main task. 
 
 # Difficulties Encountered: 
@@ -24,8 +24,7 @@ Sky-APP  :   https://github.com/aymafayez/SkyApp
 - Understand the documentation of the "Charts" framework in a short time.
 - Customizing the candle charts to look like the design.scription"
 
-# Decomposition:
-
+# Decomposition
 - (main task) read the requirement and understand it. (15 mins)
 - (main task) understand how the "candles" chart is working. (15 mins).
 - (main task) check the "candles" chart's third parties. (30 mins)
