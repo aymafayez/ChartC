@@ -8,7 +8,7 @@
 import UIKit
 import Charts
 
-class ViewController: UIViewController, ChartViewDelegate {
+class CandelChartDemoController: UIViewController, ChartViewDelegate {
     
     // MARK: - Properties
     private var backgroundColor = UIColor(red: 48/255, green: 48/255, blue: 48/255, alpha: 1)

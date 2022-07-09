@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		F7E3364A287917860013F196 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E33649287917860013F196 /* AppDelegate.swift */; };
 		F7E3364C287917860013F196 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3364B287917860013F196 /* SceneDelegate.swift */; };
-		F7E3364E287917860013F196 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3364D287917860013F196 /* ViewController.swift */; };
+		F7E3364E287917860013F196 /* CandelChartDemoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7E3364D287917860013F196 /* CandelChartDemoController.swift */; };
 		F7E33651287917860013F196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E3364F287917860013F196 /* Main.storyboard */; };
 		F7E33653287917870013F196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E33652287917870013F196 /* Assets.xcassets */; };
 		F7E33656287917870013F196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E33654287917870013F196 /* LaunchScreen.storyboard */; };
@@ -35,7 +35,7 @@
 		F7E33646287917860013F196 /* CandelChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandelChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7E33649287917860013F196 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7E3364B287917860013F196 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F7E3364D287917860013F196 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F7E3364D287917860013F196 /* CandelChartDemoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CandelChartDemoController.swift; sourceTree = "<group>"; };
 		F7E33650287917860013F196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F7E33652287917870013F196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7E33655287917870013F196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -77,7 +77,7 @@
 			children = (
 				F7E33649287917860013F196 /* AppDelegate.swift */,
 				F7E3364B287917860013F196 /* SceneDelegate.swift */,
-				F7E3364D287917860013F196 /* ViewController.swift */,
+				F7E3364D287917860013F196 /* CandelChartDemoController.swift */,
 				F7E3364F287917860013F196 /* Main.storyboard */,
 				F7E33652287917870013F196 /* Assets.xcassets */,
 				F7E33654287917870013F196 /* LaunchScreen.storyboard */,
@@ -165,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F7E3364E287917860013F196 /* ViewController.swift in Sources */,
+				F7E3364E287917860013F196 /* CandelChartDemoController.swift in Sources */,
 				F7E3364A287917860013F196 /* AppDelegate.swift in Sources */,
 				F7E3364C287917860013F196 /* SceneDelegate.swift in Sources */,
 			);
