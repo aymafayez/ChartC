@@ -13,7 +13,23 @@
 		F7E33651287917860013F196 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E3364F287917860013F196 /* Main.storyboard */; };
 		F7E33653287917870013F196 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7E33652287917870013F196 /* Assets.xcassets */; };
 		F7E33656287917870013F196 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F7E33654287917870013F196 /* LaunchScreen.storyboard */; };
+		F7E3366328791B060013F196 /* Charts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F7E3366228791B060013F196 /* Charts.framework */; };
+		F7E3366428791B060013F196 /* Charts.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F7E3366228791B060013F196 /* Charts.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		F7E3366528791B060013F196 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F7E3366428791B060013F196 /* Charts.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		F7E33646287917860013F196 /* CandelChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CandelChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,6 +40,7 @@
 		F7E33652287917870013F196 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7E33655287917870013F196 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F7E33657287917870013F196 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7E3366228791B060013F196 /* Charts.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Charts.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +48,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7E3366328791B060013F196 /* Charts.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +60,7 @@
 			children = (
 				F7E33648287917860013F196 /* CandelChart */,
 				F7E33647287917860013F196 /* Products */,
+				F7E3366128791B060013F196 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -67,6 +86,14 @@
 			path = CandelChart;
 			sourceTree = "<group>";
 		};
+		F7E3366128791B060013F196 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F7E3366228791B060013F196 /* Charts.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,6 +104,7 @@
 				F7E33642287917860013F196 /* Sources */,
 				F7E33643287917860013F196 /* Frameworks */,
 				F7E33644287917860013F196 /* Resources */,
+				F7E3366528791B060013F196 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
