@@ -30,33 +30,13 @@ class ViewController: UIViewController, ChartViewDelegate {
     }
     
     private func setupView() {
-        candleChartView.layer.cornerRadius = 20
         candleChartView.backgroundColor = backgroundColor
-        candleChartView.delegate = self
         candleChartView.chartDescription.enabled = false
-        
-        candleChartView.dragEnabled = false
+        candleChartView.dragEnabled = true
         candleChartView.setScaleEnabled(true)
-        candleChartView.maxVisibleCount = 200
         candleChartView.pinchZoomEnabled = true
-        
         candleChartView.legend.enabled = false
-        candleChartView.legend.horizontalAlignment = .right
-        candleChartView.legend.verticalAlignment = .top
-        candleChartView.legend.orientation = .vertical
-        candleChartView.legend.drawInside = false
-        candleChartView.legend.font = UIFont(name: "HelveticaNeue-Light", size: 10)!
-        
-        candleChartView.leftAxis.labelFont = UIFont(name: "HelveticaNeue-Light", size: 10)!
-        candleChartView.leftAxis.spaceTop = 0.3
-        candleChartView.leftAxis.spaceBottom = 0.3
-        candleChartView.leftAxis.axisMinimum = 0
-        
-        candleChartView.rightAxis.enabled = false
-        
         candleChartView.xAxis.labelPosition = .bottom
-        candleChartView.xAxis.labelFont = UIFont(name: "HelveticaNeue-Light", size: 10)!
-        
     }
     
     private func setupRightAxis() {
@@ -72,7 +52,6 @@ class ViewController: UIViewController, ChartViewDelegate {
     
     private func setupXAxis() {
         candleChartView.xAxis.labelPosition = .bottom
-        candleChartView.xAxis.labelFont = UIFont(name: "HelveticaNeue-Light", size: 10)!
         candleChartView.xAxis.gridColor = .clear
         candleChartView.xAxis.axisLineWidth = 0
         candleChartView.xAxis.labelTextColor = .gray
