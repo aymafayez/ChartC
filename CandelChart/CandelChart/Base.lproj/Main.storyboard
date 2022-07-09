@@ -16,26 +16,82 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IJM-MY-caD" customClass="CandleStickChartView" customModule="Charts">
-                                <rect key="frame" x="30" y="74" width="354" height="758"/>
+                                <rect key="frame" x="30" y="74" width="354" height="718"/>
                                 <color key="backgroundColor" red="0.1866590679" green="0.1866918504" blue="0.1866519153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfg-sR-3Eq">
+                                <rect key="frame" x="30" y="797" width="354" height="70"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MF4-al-VlS">
+                                        <rect key="frame" x="112" y="5" width="130" height="60"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FOU-Xl-BUX">
+                                                <rect key="frame" x="70" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="60" id="3Md-Br-IWL"/>
+                                                    <constraint firstAttribute="width" constant="60" id="OHf-ua-m8b"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressZoomIn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WL1-hQ-aLL"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GM9-hQ-WYe">
+                                                <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="YWC-t1-73h"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="didPressZoomOut:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kY7-Do-jxF"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="FOU-Xl-BUX" firstAttribute="leading" secondItem="GM9-hQ-WYe" secondAttribute="trailing" constant="10" id="5W6-cI-2ZX"/>
+                                            <constraint firstAttribute="bottom" secondItem="GM9-hQ-WYe" secondAttribute="bottom" id="9YA-u8-PeL"/>
+                                            <constraint firstItem="GM9-hQ-WYe" firstAttribute="top" secondItem="MF4-al-VlS" secondAttribute="top" id="THV-2e-yPp"/>
+                                            <constraint firstItem="GM9-hQ-WYe" firstAttribute="leading" secondItem="MF4-al-VlS" secondAttribute="leading" id="Yme-BI-BAw"/>
+                                            <constraint firstAttribute="trailing" secondItem="FOU-Xl-BUX" secondAttribute="trailing" id="cJB-f5-Cdo"/>
+                                            <constraint firstItem="FOU-Xl-BUX" firstAttribute="top" secondItem="MF4-al-VlS" secondAttribute="top" id="ctD-8t-Em1"/>
+                                            <constraint firstAttribute="bottom" secondItem="FOU-Xl-BUX" secondAttribute="bottom" id="dRQ-VW-8AW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="MF4-al-VlS" firstAttribute="centerX" secondItem="gfg-sR-3Eq" secondAttribute="centerX" id="4OD-K2-9PQ"/>
+                                    <constraint firstItem="MF4-al-VlS" firstAttribute="top" secondItem="gfg-sR-3Eq" secondAttribute="top" constant="5" id="RdE-RJ-jPg"/>
+                                    <constraint firstAttribute="bottom" secondItem="MF4-al-VlS" secondAttribute="bottom" constant="5" id="pdC-2Z-mND"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.13851127029999999" green="0.13853749630000001" blue="0.1385055184" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IJM-MY-caD" secondAttribute="bottom" constant="30" id="QMa-ee-eJe"/>
+                            <constraint firstItem="gfg-sR-3Eq" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" constant="5" id="3hJ-Xe-NvY"/>
+                            <constraint firstItem="gfg-sR-3Eq" firstAttribute="leading" secondItem="IJM-MY-caD" secondAttribute="leading" id="8g0-yd-GZe"/>
+                            <constraint firstItem="gfg-sR-3Eq" firstAttribute="top" secondItem="IJM-MY-caD" secondAttribute="bottom" constant="5" id="IB4-Kh-cwh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IJM-MY-caD" secondAttribute="trailing" constant="30" id="VpD-9u-QGQ"/>
                             <constraint firstItem="IJM-MY-caD" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="30" id="W6H-HC-y9T"/>
                             <constraint firstItem="IJM-MY-caD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="bGZ-id-9SF"/>
+                            <constraint firstItem="gfg-sR-3Eq" firstAttribute="trailing" secondItem="IJM-MY-caD" secondAttribute="trailing" id="iFx-d2-81r"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="candleChartView" destination="IJM-MY-caD" id="0oS-TO-MQK"/>
+                        <outlet property="zoomInButton" destination="FOU-Xl-BUX" id="75b-BN-5HV"/>
+                        <outlet property="zoomOutButton" destination="GM9-hQ-WYe" id="jIe-YF-5fa"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="141" y="120"/>
+            <point key="canvasLocation" x="140.57971014492756" y="119.86607142857142"/>
         </scene>
     </scenes>
 </document>
