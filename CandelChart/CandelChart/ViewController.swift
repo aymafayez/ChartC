@@ -65,11 +65,11 @@ class ViewController: UIViewController, ChartViewDelegate {
     }
     
     private func updateChartData() {
-        // Increasing entries of currencies
+      
         let entry1 = CandleChartDataEntry(x: Double(5), shadowH: 60, shadowL: 10, open: 20, close: 50, icon: UIImage(named: "down-arrow"))
         let entry2 = CandleChartDataEntry(x: Double(10), shadowH: 70, shadowL: 20, open: 30, close: 60, icon: UIImage(named: "down-arrow"))
         
-        // Decreasing entries of currencies
+      
         let entry3 = CandleChartDataEntry(x: Double(15), shadowH: 10, shadowL: 60, open: 50, close: 20, icon: UIImage(named: "up-arrow"))
         let entry4 = CandleChartDataEntry(x: Double(20), shadowH: 20, shadowL: 70, open: 60, close: 30, icon: UIImage(named: "up-arrow"))
         
